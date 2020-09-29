@@ -1,13 +1,18 @@
 <template>
  <div id="cliente">
-    <h2>Derek vue</h2>
-    <hr>
+    <h2>Lista de produtos</h2>
+    <Produto/>
  </div>
+
 </template>
 
 <script>
+import Produto from './Produto';
 export default {
-
+  name: 'Cliente',
+  components:{
+    Produto
+  }
 }
 </script>
 
@@ -15,7 +20,13 @@ export default {
     #cliente{
       color:blue;
       background:black;
-      max-width: 600px;
-      height: 400px;
+      width: 100%;
+      max-width: 300px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
+  
 </style>

@@ -1,18 +1,32 @@
 <template>
   <div id="app">
-    <h1>Guia do Derek</h1>
+    <h1>Guia cliente</h1>
     <Cliente/>
+    <Produto/>
   </div>
 </template>
 
 <script>
-import Cliente from './components/Cliente.vue'
+import Cliente from './components/Cliente';
 
 export default {
   name: 'App',
-  components: {
+  components:{
     Cliente
   }
 }
 </script>
 
+<style>
+  #app{
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-align: center;
+    color:'#2c3e50';
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
