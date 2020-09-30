@@ -1,32 +1,46 @@
 <template>
  <div id="cliente">
-    <h2>Lista de produtos</h2>
-    <Produto/>
+   <h4>Nome:{{cliente.nome}}</h4>
+   <hr>
+   <p>Email: {{cliente.email}}</p>
+   <p>Idade:{{cliente.idade}}</p>
+  
  </div>
 
 </template>
 
 <script>
-import Produto from './Produto';
+// import Produto from './Produto';
 export default {
-  name: 'Cliente',
-  components:{
-    Produto
+  
+  data(){
+    return{
+      descrição:'Programdor de camelo branco',
+      numero:333333333,
+      email:'derek@jupter.com'
+    }
+  },
+
+  props:{
+    nome:String,
+    idade:Number,
+    cliente:Object
   }
+
+  // name: 'Cliente',
+  // components:{
+  //   Produto
+  // }
 }
 </script>
 
 <style>
-    #cliente{
-      color:blue;
-      background:black;
-      width: 100%;
-      max-width: 300px;
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+#cliente{
+    background-color: rgb(201, 229, 253);
+    width: 400px;
+    padding: 2%;
+    margin-top: 2%;
+}
+    
   
 </style>

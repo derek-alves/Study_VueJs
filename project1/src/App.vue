@@ -1,16 +1,33 @@
 <template>
   <div id="app">
-    <h1>Guia cliente</h1>
-    <Cliente/>
-    <Produto/>
+    <h1>Cliente</h1>
+    <Cliente :cliente="clientDerek"/>
+    <Cliente :cliente="clientDerek"/>
+    <Cliente :cliente="clientDerek"/>
+    <Cliente :cliente="clientDerek"/>
+    <Cliente :cliente="clientDerek"/>
+    <Cliente nome="Timão" idade="330"/>
+
   </div>
 </template>
 
 <script>
-import Cliente from './components/Cliente';
+ import Cliente from './components/Cliente';
 
 export default {
   name: 'App',
+
+  data(){
+    return{
+        nomeDoDerek:'Derek E. Alves',
+        clientDerek:{
+          nome:"Derek",
+          email:"derekão@derek.com",
+          idade:28
+        }
+    }
+  },
+
   components:{
     Cliente
   }
@@ -22,11 +39,8 @@ export default {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
-    text-align: center;
     color:'#2c3e50';
     margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   
   }
 </style>
