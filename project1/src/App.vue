@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <h1>Cliente</h1>
-    <Cliente :cliente="clientDerek"/>
-    <Cliente :cliente="clientDerek"/>
-    <Cliente :cliente="clientDerek"/>
-    <Cliente :cliente="clientDerek"/>
-    <Cliente :cliente="clientDerek"/>
-    <Cliente nome="Timão" idade="330"/>
+    <Cliente :cliente="clientDerek" :showIdade="false"/>
+    <Cliente :cliente="clientDerek" :showIdade="true"/>
+    <Cliente :cliente="clientDerek" :showIdade="false"/>
+    <Cliente :cliente="clientDerek" :showIdade="true"/>
+    <Cliente :cliente="clientDerek" :showIdade="false"/>
+    <!-- <Cliente nome="Timão" idade="330" showIdade="true"/> -->
 
   </div>
 </template>
